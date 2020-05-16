@@ -3,4 +3,4 @@ Project Link : [Project 1 : Mini Task 2](https://github.com/Jayanth2209/Mini-Tas
 #### Problem Statement: 
 To develop a prototype for a robotic wheelchair that can be controlled using simple hand gestures.Each hand gesture is used for a specific movement of the wheelchair     
 #### Project Pipeline:     
-Gyroscope
+Hand Movement/Gesture detection (Accelerometer + Gyroscope) --> Microcontroller (Arduino Nano - Transmitting End-Hand module) --> Wireless Communication Module (RF Module/Bluetooth Module) --> Microcontroller (Arduino Nano - Receiving End-Wheelchair module) --> Motor driver --> Motors (Wheelchair movements)
