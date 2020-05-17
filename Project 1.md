@@ -69,6 +69,7 @@ void setup() {
 void loop() {
 }     
 ```      
+If we see any movement, it means that the motor driver is working properly. Also make sure the wires touch the metal contact in the motors or any loose connections as mentioned above.     
 
 
 
