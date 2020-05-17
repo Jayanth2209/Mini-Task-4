@@ -32,11 +32,11 @@ MPU6050 connection successful
 If you don't get any data or if you are getting garbage data, just reset the Arduino. If you look at the last sentence, it says "Send any character to begin DMP programming and demo". So, type any character in the serial terminal and hit send. You can now start seeing the values in the serial monitor.    
 ###### Caution : During this time, keep the MPU6050 stable and wait a few seconds for the values from MPU6050 to be stabilized.     
 ### Wireless Communication Module:     
-We can use an RF Communication Module (or) a Bluetooth Module for this purpose as discussed in Mini task 2.       
+We can use an *RF Communication Module (or) a Bluetooth Module* for this purpose as discussed in Mini task 2.       
 #### Testing RF Communication Module:    
 This is one of the easiest and cheapest ways to implement wireless communication between two Arduino Modules.     
 The RF Transmitter Module consists of 4 – pins: VCC, GND, Data and Antenna. VCC and GND pins are connected to power supply and ground respectively. The data pin is connected to any of the digital I/O pin of Arduino. The antenna pin must be connected to an antenna which is nothing but a wire wound in the form of a coil.      
 The RF Receiver Module consists of 4 – pins: VCC, GND, Data and Antenna. VCC and GND pins are connected to 3.3V pin of the other Arduino and ground respectively. The antenna pin must be connected to an antenna similar to the one in transmitter module.    
 All the connections are tested and power supply is ensured. We must again check if all the modules light up and also if any module is damaged/burnt. Then we can proceed to the next step.    
-Refer to this link for an RF Module-Arduino interface tutorial : [Interfacing RF Module-Arduino and Testing](https://lastminuteengineers.com/433mhz-rf-wireless-arduino-tutorial/)       
-
+Refer to this link for an RF Module-Arduino interface tutorial : [Interfacing RF Module-Arduino and Testing](https://lastminuteengineers.com/433mhz-rf-wireless-arduino-tutorial/)          
+#### Testing Bluetooth Module: 
