@@ -40,3 +40,35 @@ The RF Receiver Module consists of 4 – pins: VCC, GND, Data and Antenna. VCC a
 All the connections are tested and power supply is ensured. We must again check if all the modules light up and also if any module is damaged/burnt. Then we can proceed to the next step.    
 Refer to this link for an RF Module-Arduino interface tutorial : [Interfacing RF Module-Arduino and Testing](https://lastminuteengineers.com/433mhz-rf-wireless-arduino-tutorial/)          
 #### Testing Bluetooth Module: 
+We check all the connections and also ensure that the module lights up.    
+Refer to this link on "How to setup and test HC-05 Bluetooth Module" : [Setup and Test Bluetooth Module with Arduino](https://www.instructables.com/id/How-to-Set-Up-and-Test-Arduino-Bluetooth-Connectio/)         
+Ensure the power supply all the time and also check for any damage in the components/modules.     
+Also ensure that the Arduino board is working and is not heated up i.e. damaged/burnt. Then we can proceed to the next step.     
+### Wheelchair Module:    
+The Wheelchair module consists of the motor drivers and motors. Make sure all the connections are proper and ensure that the motor driver is not shorted, because it can be destroyed easily. Also check the connections to the motors and ensure that there aren't any loose connections. If there are any loose connections, the motors will not work. We use the following code to test the motor driver
+```
+int l1 = 6;
+int r1 = 5;
+int l2 = 4;
+int r2 = 3;
+
+void setup() {
+  
+  delay(500);
+  Serial.begin(9600);
+  pinMode(l1, OUTPUT);
+  pinMode(l2, OUTPUT);
+  pinMode(r1, OUTPUT);
+  pinMode(r2, OUTPUT);
+  digitalWrite(l1, HIGH);
+  digitalWrite(r1, HIGH);
+  digitalWrite(l2, LOW);
+  digitalWrite(r2, LOW);
+}
+
+void loop() {
+}     
+```      
+
+
+
