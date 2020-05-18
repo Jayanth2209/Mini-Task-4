@@ -23,7 +23,8 @@ Connection of Humidity sensor (DHT11) with NodeMCU board is as follows:
 * Pin 1 of the DHT11 goes into +3v pin of the NodeMCU.
 * Pin 2 of the DHT11 goes into a digital pin of the NodeMCU.
 * Pin 3 of the DHT11 goes into Ground Pin (GND) of the NodeMCU.    
-These connections are ensured. DHT11 reads the humidity and sends to NodeMCU which then sends it to the cloud for processing.     
+These connections are ensured. DHT11 reads the humidity and sends to NodeMCU which then sends it to the cloud for processing.      
+[DHT11 Datasheet](https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054.pdf)      
 ##### Testing DHT11:     
 Upload the code and ensure you are getting the humidity values properly. If not, try checking the connections and code again (or) replace the sensor with a new one.     
 #### BMP180 Sensor:    
@@ -31,7 +32,8 @@ Connection of Pressure sensor (BMP180) with NodeMCU board is as follows:
 * BMP180 VIN to 3.3V of NodeMCU  
 * GND pin of BMP180 to GND of NodeMCU 
 * SCL to D1 and SDA to D2 of NodeMCU      
-All these connections are ensured. The sensor reads the pressure data and sends this data to NodeMCU which sends it to the cloud for processing.      
+All these connections are ensured. The sensor reads the pressure data and sends this data to NodeMCU which sends it to the cloud for processing.     
+[BMP180 Datasheet](https://cdn-shop.adafruit.com/datasheets/BST-BMP180-DS000-09.pdf)       
 ##### Testing BMP180:   
 The following code can be used to test the working of BMP180 sensor. After uploading code open serial monitor at 115200 baud rate and you will find all sensor readings are coming. In case of any error check your connections.      
 ``` 
