@@ -69,7 +69,16 @@ void setup() {
 void loop() {
 }     
 ```      
-If we see any movement, it means that the motor driver is working properly. Also make sure the wires touch the metal contact in the motors or any loose connections as mentioned above. We finally check the code and correct any errors, if any.     
+If we see any movement, it means that the motor driver is working properly. Also make sure the wires touch the metal contact in the motors or any loose connections as mentioned above. We finally check the code and correct any errors, if any.      
+### Resources:    
+[Interfacing RF Module-Arduino and Testing](https://lastminuteengineers.com/433mhz-rf-wireless-arduino-tutorial/)        
+[Setup and Test Bluetooth Module with Arduino](https://www.instructables.com/id/How-to-Set-Up-and-Test-Arduino-Bluetooth-Connectio/)     
+[Arduino Nano](https://www.amazon.in/easy-electronics-Arduino-Nano-Cable/dp/B07C8G4N6X/ref=sr_1_1?dchild=1&keywords=arduino+nano&qid=1589796132&sr=8-1)        
+[Arduino Uno](https://www.amazon.in/Uno-ATmega328P-Compatible-ATMEGA16U2-Arduino/dp/B015C7SC5U/ref=sr_1_2?dchild=1&keywords=arduino+uno&qid=1589796339&s=computers&sr=1-2)      
+[L293D Motor Driver](https://www.amazon.in/Adraxx-L293D-Motor-Driver/dp/B01NAJHRJ0/ref=sr_1_10?keywords=L293d&qid=1568454815&s=gateway&sr=8-10)      
+[HC-05 Bluetooth Module](https://www.amazon.in/HC-05-Bluetooth-Module-10g/dp/B00X86U4RW/ref=sr_1_3?keywords=Hc+-+05&qid=1568454849&s=gateway&sr=8-3)      
+[RF Transmitter-Receiver Module](https://robu.in/product/rf-transmitter-receiver-module-315mhz-wireless-link-kit-for-arduino/?gclid=EAIaIQobChMI59Ts9JW96QIVFz5gCh3vMQxdEAYYAiABEgJtIvD_BwE)      
+[MPU-6050](https://robu.in/product/mpu-6050-gyro-sensor-2-accelerometer/)        
 
 
 
