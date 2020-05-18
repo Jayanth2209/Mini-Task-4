@@ -3,10 +3,10 @@
 To build a Weather Station that displays weather information and predicts forthcoming weather situations         
 Project Link : [Project 2 : Mini Task 2](https://github.com/Jayanth2209/Mini-Task-2/blob/master/Project%202.md)         
 ## Project Pipeline:      
-Sensors (Temperature, Humidity and Pressure) --> NodeMCU --> IoT Cloud --> Raspberry Pi --> LCD Display     
+Sensors (Temperature, Humidity and Pressure) --> NodeMCU --> IoT Cloud --> NodeMCU --> LCD Display     
 So, the pipeline consists of two parts:     
 * The Transmitting End : Sensors and NodeMCU - NodeMCU collects data from all the sensors and sends it to an open, online IoT platform and the data is processed       
-* The Receiving End : Raspberry Pi and LCD Display - Raspberry Pi collects this processed data and drives the LCD display     
+* The Receiving End : NodeMCU and LCD Display - NodeMCU collects this processed data and drives the LCD display     
 The user can also access the Weather information online, on the IoT platform from anywhere and locally, an LCD display is used to display the Weather information.      
 ### Transmitting End:      
 Temperature (LM35), Humidity (DHT11) and Pressure (BMP180) sensors + NodeMCU        
@@ -146,3 +146,24 @@ void setup()
 }     
 ```   
 If you are not getting the data properly, try replacing the sensor with a new one.      
+
+After making all the connections, of all sensors with NodeMCU, check if everything lights up. If not, check for any damage or check if the board is heated up. If it is burnt/damaged, replace it with a new one.     
+### Receiving end:    
+NodeMCU + LCD Display     
+All we have to do here is to check if the connection of NodeMCU and the LCD display is proper.      
+* Connect the GND pin on the LCD display to one of the GND pins on the NodeMCU.
+* Connect the VCC pin on the LCD display to the VIN pin on the NodeMCU (The VIN pin on the NodeMCU is tied directly to the 5V pin on the incoming USB port. If you plan on powering the NodeMCU with something other than USB, you'll have to find another way to provide 5V to the display)
+* Connect the SDA pin on the LCD display to the D2 pin on the NodeMCU.
+* Connect the SDL pin on the LCD display to the D1 pin on the NodeMCU.         
+Also ensure that the connection of NodeMCU and the cloud is established, and that it is reading data from the cloud. Finally, check your code for any errors.      
+### Resources:
+[Interfacing LM35 with NodeMCU](https://www.hackster.io/pankaj6/nodemcu-connecting-lm35-based-temperature-monitoring-system-0e56ae)     
+[Interfacing BMP180 with NodeMCU](https://circuits4you.com/2019/03/23/esp8266-bmp180-pressure-sensor-interface/)     
+[Interfacing DHT11 with NodeMCU](https://www.instructables.com/id/Interface-DHT11-Humidity-Sensor-Using-NodeMCU/)      
+[Testing LM35](http://embedded-lab.com/blog/testing-active-analog-temperature-sensors-with-a-multimeter/)       
+[LM35 Temperature Sensor](https://robu.in/product/lm35-to-92-3-board-mount-temperature-sensors/)       
+[DHT11 Humidity Sensor](https://robu.in/product/dht11-digital-relative-humidity-temperature-sensor-module/)       
+[BMP180 Pressure Sensor](https://robu.in/product/bmp180-digital-barometric-pressure-sensor-board-module-arduino-compatible-2/)        
+[NodeMCU](https://thinkrobotics.in/products/nodemcu-v3-lua-wifi-internet-of-things-development-board?variant=16350759419976&currency=INR&gclid=EAIaIQobChMI6tnmuaG96QIVBzdgCh0h4AGkEAQYAiABEgIo7fD_BwE)      
+[LCD Display](https://robu.in/product/basic-16x2-character-lcd-white-on-blue-on-blue-5v/?gclid=EAIaIQobChMI8_zg6qK96QIVylBgCh0K8ghKEAQYASABEgJqifD_BwE)      
+
